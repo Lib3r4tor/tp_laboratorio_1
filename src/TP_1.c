@@ -1,4 +1,4 @@
-/*
+/******************************************************************************
  ============================================================================
  Name        : TP_1.c
  Author      : Ivan Gonzalez
@@ -6,8 +6,6 @@
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
  Enunciado
-hay q hacer un menu principal con opciones
-para q el usuario elija a donde se quiere dirigir
 Una agencia de viaje necesita calcular costos para sus vuelos de Latam y Aerolíneas Argentinas
 para ofrecerlos a sus clientes.
 Se deberá ingresar por cada vuelo los km totales y el precio total del mismo.
@@ -37,13 +35,17 @@ d) Precio unitario: r
 La diferencia de precio es : r “
 5. Carga forzada de datos
 6. Salir
- ============================================================================
- */
-
+*******************************************************************************/
 #include <stdio.h>
-#include <stdlib.h>
+#include <ctype.h>
+#include <ctype.h>
+#include <math.h>
+#include <string.h>
+#include "funciones.h"
 
-int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
-	return EXIT_SUCCESS;
+
+int main()
+{
+    setbuf(stdout, NULL);
+    menu();
 }
